@@ -2,19 +2,20 @@ import React from 'react';
 import './Header.css'
 import MenuIcon from "@material-ui/icons/Menu"
 import { IconButton } from '@material-ui/core';
-import formimage from "./images/slogo.png"
+import formimage from "../images/slogo.png"
 import SearchIcon from '@material-ui/icons/Search';
 import AppsIcon from '@material-ui/icons/Apps';
 import Avatar from '@material-ui/core/Avatar';
-import avatarImage from "./images/avimg.JPG"
+import avatarImage from "../images/avimg.JPG"
+import TemporaryDrawer from './TemporaryDrawer';
+
 function Header() {
   return (
     <div className = "header">
       <div className = "header_info">
 
-          <IconButton>
-          <MenuIcon />
-          </IconButton>
+          <TemporaryDrawer/>
+
           <img src = {formimage} style={{height: '50px',width: '40px'}} className = "form_image"/>
           <div className = "info">
             Digital Survey
@@ -24,7 +25,7 @@ function Header() {
 
       <div className = "header_search">
           <IconButton>
-          <SearchIcon />
+           <SearchIcon />
           </IconButton>
           <input type = "text" name = "search" placeholder = "Search" />
       </div>
