@@ -34,7 +34,7 @@ function TemporaryDrawer(){
                     <ListItemText style={{fontSize:"50px",marginLeft:"5px"}}>
 
                     <span style = {{color:"#281D52",fontWeight:"500",fontSize:"30px",fontFamily:"Roboto"}}>
-                        User Interface
+                        DS Interface
                     </span>
 
                     </ListItemText>
